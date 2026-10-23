@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api",
+      "destination": "https://city-widget-api.vercel.app/api"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://city-widget-api.vercel.app/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

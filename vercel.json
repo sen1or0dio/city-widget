@@ -1,0 +1,30 @@
+{
+  "services": {
+    "frontend": {
+      "root": ".",
+      "framework": "vite",
+      "installCommand": "npm install --ignore-scripts",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist"
+    },
+    "backend": {
+      "root": "backend",
+      "framework": "express",
+      "entrypoint": "index.ts"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "backend"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "frontend"
+      }
+    }
+  ]
+}
