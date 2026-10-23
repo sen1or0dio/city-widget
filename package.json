@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "npm --prefix ../city-admin install",
-    "dev": "concurrently -k -n api,site \"npm --prefix ../city-admin start\" \"vite\"",
+    "postinstall": "npm --prefix backend install",
+    "dev": "concurrently -k -n api,site \"npm --prefix backend start\" \"vite\"",
     "dev:site": "vite",
     "build": "vite build",
     "lint": "oxlint",
