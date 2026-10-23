@@ -9,4 +9,5 @@ npm install
 npm start
 ```
 
-Проверка сервера: `http://localhost:3000/api/health`.
+Список событий находится в `events.ts`.
+Сервер отдаёт его по адресу `http://localhost:3000/api/events`.

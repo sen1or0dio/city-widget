@@ -1,10 +1,11 @@
 import express from 'express'
+import { events } from './events'
 
 const app = express()
 const port = 3000
 
-app.get('/api/health', (_request, response) => {
-  response.json({ message: 'Server works' })
+app.get('/api/events', (_request, response) => {
+  response.json(events)
 })
 
 app.listen(port, () => {
