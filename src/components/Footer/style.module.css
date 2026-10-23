@@ -1,0 +1,12 @@
+.footer { padding: 34px 0; color: #dbe4f2; background: #17233c; }
+.container { display: flex; align-items: center; width: min(1180px, 100%); margin: auto; padding: 0 24px; }
+.container > p { color: #8f9bad; font-size: 11px; }
+.footerLinks { display: flex; gap: 25px; }
+.footerLinks a { color: inherit; font-size: 13px; text-decoration: none; }
+.container > p { margin-left: auto; }
+
+@media (max-width: 700px) {
+  .container { align-items: flex-start; flex-direction: column; }
+  .footerLinks { margin: 24px 0 0; }
+  .container > p { margin: 24px 0 0; }
+}
