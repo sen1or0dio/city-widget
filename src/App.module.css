@@ -1,0 +1,42 @@
+.lightTheme,
+.darkTheme {
+  min-height: 100vh;
+}
+
+.lightTheme {
+  --accent-button: #c94f26;
+  --accent-text: #b8421b;
+  --icon-color: black;
+  color: #17233c;
+  background-color: #f5f7fa;
+}
+
+.darkTheme {
+  --accent-button: #c94f26;
+  --accent-text: #ff936d;
+  --icon-color: white;
+  color: #f5f7fa;
+  background-color: #10192b;
+}
+
+.darkTheme :global(.themeCard) {
+  color: #f5f7fa;
+  background-color: #1a2740;
+  border-color: #2c3b56;
+}
+
+.darkTheme :global(.themeMutedText) {
+  color: #aeb8c8;
+}
+
+.darkTheme :global(.themeSection) {
+  background-color: #152137;
+}
+
+.darkTheme :global(.themeCard) input,
+.darkTheme :global(.themeCard) select,
+.darkTheme :global(.themeCard) textarea {
+  color: #f5f7fa;
+  background-color: #25344e;
+  border-color: #3b4a63;
+}
